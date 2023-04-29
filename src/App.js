@@ -7,10 +7,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <Router>
-      <div className="main">
-        <h2 className="main-header">React Crud Operations</h2>
-        <Routes> 
-      
+   <div className="main">
+        <h2 className="main-header">User Dashboard</h2>
+        <Link to='/create'>
+
+            <Button>Create User</Button>
+
+          </Link><br></br>
+         
+          <Link to='/read'>
+
+          <Button>View Users</Button>
+
+        </Link> 
+         <Routes>
           <Route exact path='/create' element={<Create/>} />
        
         
